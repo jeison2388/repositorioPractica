@@ -12,6 +12,17 @@ package ejemplo;
 public class porEjemplo {
     
     private String medidas;
+    private String acciones;
+
+    public String getAcciones() {
+        return acciones;
+    }
+
+    public void setAcciones(String acciones) {
+        this.acciones = acciones;
+    }
+    
+    
 
     public porEjemplo(String medidas) {
         this.medidas = medidas;
