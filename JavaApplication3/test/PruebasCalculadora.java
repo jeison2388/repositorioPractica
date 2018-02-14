@@ -24,17 +24,19 @@ public class PruebasCalculadora {
     @Test
     public void pruebaSuma()
     {
-       int resultado = calculadora.sumar(5, 8);
+       calculadora.setNumero1(5);
+       calculadora.setNumero2(8);
+       int resultado = calculadora.sumar();
        int esperado = 13;
        assertEquals(esperado, resultado);
     }
     @Test
     public void pruebaResta()
     {
-       int resultado = calculadora.restar(5, 8);
+       calculadora.setNumero1(5);
+       calculadora.setNumero2(8);
+       int resultado = calculadora.restar();
        int esperado = -3;
        assertEquals(esperado, resultado);
     }
-    
-    
 }

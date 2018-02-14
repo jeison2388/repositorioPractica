@@ -216,11 +216,15 @@ public class VistaCalculadora extends javax.swing.JFrame {
       switch(operacion)
       {
           case SUMAR: 
-              informacionMostrar = ""+calculadora.sumar(primerNumero, segundoNumero);
+              calculadora.setNumero1(primerNumero);
+              calculadora.setNumero2(segundoNumero);
+              informacionMostrar = ""+calculadora.sumar();
               txt_mostrarInformacion.setText(informacionMostrar);
               break;
           case RESTAR:
-              informacionMostrar = ""+calculadora.restar(primerNumero, segundoNumero);
+              calculadora.setNumero1(primerNumero);
+              calculadora.setNumero2(segundoNumero);
+              informacionMostrar = ""+calculadora.restar();
               txt_mostrarInformacion.setText(informacionMostrar);
               break;
           case LIMPIAR:
